@@ -1,0 +1,30 @@
+[user]
+	name = John Doe
+	email = john.doe@example.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	ci = commit
+	ca = commit --amend
+	can = commit --amend --no-edit
+	st = status --short --branch
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	ls = log --stat
+	rc = rebase --continue
+	rs = rebase --skip
+	rb = rebase --interactive
+[core]
+	editor = vim
+	autocrlf = false
+	excludesfile = $HOME/.gitignore
+[hub]
+	protocol = git
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
